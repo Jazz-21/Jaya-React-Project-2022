@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+  }
+  
+  .add{
+    background-color: aquamarine;
+    margin: 5px;
+    display: contents;
+    font-size: large;
+    font-weight: bold;
+    color: brown;
+  }
+
+  .add:hover{
+    color: blue;
+  }
+  
+ 
+  

@@ -1,0 +1,68 @@
+
+.battle .hamster1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 16rem;
+    width: 20rem;
+    min-width: 12rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    
+}
+.battle .hamster2 {
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 16rem;
+    width: 20rem;
+    min-width: 12rem;
+    margin-left: 25rem;
+    margin-top: 3rem; 
+}
+
+.text{
+  color: #cc3366;
+}
+
+.battle .winninghamster {
+  text-align: center;
+	font-size: 1em;
+	left: 0;
+	right: 0;
+	color: #cc3366;
+	margin: 0.5em auto 0.5em auto;
+	height: 10em;
+	width: 15em;
+	border-radius: 1em;
+	box-shadow: 10px 10px #d7b3b3;
+  margin-top: 10px; 
+  margin-left: 35rem;
+}
+
+.battle button {
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+}
+
+.vote{
+  text-align: justify;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.vote:hover{
+  color: blue;
+}
+
+.battle .message {
+  font-size: larger;
+  color: #cc3366;
+  font-weight: bold;
+  text-align: center;
+}
+
+.battle .voting {
+  display: flex;
+}
