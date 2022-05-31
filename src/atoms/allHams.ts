@@ -1,8 +1,8 @@
 import { atom } from "recoil";
-import { NewHams } from "../models/NewHamster";
+import { NewHamster } from "../models/NewHamster";
 
 //Gallery State
-const allHams = atom<NewHams[]>({
+const allHams = atom<NewHamster[]>({
 	key: 'allHams',
 	default: []
 })
