@@ -11,7 +11,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "start": "node backend/server.js",
-    "start.backend": "node backend/server.js"
+    "start-frontend-dev": "react-scripts start"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
@@ -20,8 +20,8 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "firebase": "^9.8.2",
-    "firebase-admin": "^7.0.0",
-    "firestore-export-import": "^1.1.0",
+    "firebase-admin": "^10.2.0",
+    "firestore-export-import": "^0.2.7",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-redux": "^8.0.2",

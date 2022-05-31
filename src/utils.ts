@@ -4,7 +4,7 @@ function fixUrl(url: string): string {
 		//console.log('DEV MODE')
 		return 'http://localhost:1999' + url
 	} else {
-		console.log('PRODUCTION MODE')
+		//console.log('PRODUCTION MODE')
 		return url
 	}
 }
