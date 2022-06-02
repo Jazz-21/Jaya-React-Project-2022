@@ -6,8 +6,6 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const distPath = path.join(__dirname, '/../dist/')
-
 const app = express();
 import hamsters from './routes/hamsters.js'
 
@@ -32,10 +30,6 @@ app.use('/HamPics', express.static(picsFolder) );
 
 // api for hamsters
 app.use('/hamsters', hamsters);
-
-app.all('*', (req, res) => {
-	res.sendFile(distPath + 'index.html')
-  })
 
 
 //Starting server
