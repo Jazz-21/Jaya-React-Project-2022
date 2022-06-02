@@ -19,8 +19,6 @@ app.use((req, _res, next) => {
 	next();
 });
 
-app.use(express.static(distPath));
-
 app.use( express.json() );
 app.use( cors() );
 //app.use( express.static(staticFolder) );
