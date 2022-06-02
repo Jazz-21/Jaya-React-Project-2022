@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "start": "node backend/server.js",
+    "start": "node server.js",
     "start-frontend-dev": "react-scripts start"
   },
   "dependencies": {
