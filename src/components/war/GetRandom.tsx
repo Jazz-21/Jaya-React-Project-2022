@@ -114,10 +114,37 @@ const GetRandom = () => {
       })
     }
   }
-  
   const NewBattle = () => {
-    window.location.reload();
+    sethamsOne(null)
+    sethamsTwo(null)
+    setwins(null)
+    setlost(null)
+    setwellPlayed(false)
+    setwellPlayed1(false)
+
+    //Hämtar ny första random hamster
+
+    async function getData1() {
+      const response: Response = await fetch(fixUrl('/hamsters/random'))
+      const apiData: any = await response.json()
+
+      sethamsOne(apiData as NewHamster)
+    }
+    getData1()
+    console.log('ny match h1')
+
+    //Hämtar ny andra random hamster
+
+    async function getData2() {
+      const response: Response = await fetch(fixUrl('/hamsters/random'))
+      const apiData: any = await response.json()
+
+      sethamsTwo(apiData as NewHamster)
+    }
+    getData2()
+    console.log('ny match h2')
   }
+  //const NewBattle = () => {window.location.reload();}
   useEffect(() => {
     async function getData() {
       const response: Response = await fetch(fixUrl('/hamsters/random'))
@@ -138,6 +165,8 @@ const GetRandom = () => {
     getData()
 
   }, [])
+
+ 
 
   return (
     <div className={styles.battle}>

@@ -75,8 +75,9 @@ const PostHamster = () => {
             placeholder="Name"
             value={name}
             onChange={event => setName(event.target.value)}
-            
           />
+          {nameIsValid === false ? <p>Please write a name!</p> : <p>Done!</p>}
+
           <input
             className={styles.forms}
             type="number"
@@ -84,29 +85,34 @@ const PostHamster = () => {
             value={age}
             onChange={event => setAge(event.target.value)}
           />
+          {ageIsValid === false ? <p>Please write the age of Hamster in number</p> : <p>Done!</p>}
+
           <input
             className={styles.forms}
             type="text"
             placeholder="Food"
             value={favFood}
             onChange={event => setFavFood(event.target.value)}
-            
           />
+{favFoodIsValid === false ? <p>Please write what hamsters loves to eat</p> : <p>Done!</p>}
+
           <input
             className={styles.forms}
             type="text"
             placeholder="Loves"
             value={loves}
             onChange={event => setLoves(event.target.value)}
-           
           />
+ {lovesIsValid === false ? <p>Please write what hamster loves to do</p> : <p>Done!</p>}
+
           <input
             className={styles.forms}
             type="text"
-            placeholder="Picture"
+            placeholder="Picture/link"
             value={imgName}
             onChange={event => setImgName(event.target.value)}
           />
+ {imgNameIsValid === false ? <p>Enter a web link or upload an image </p> : <p>Done!</p>}
           <button className={styles.forms} disabled={!formIsValid} onClick={handleAddHamster}>
             Add a hamster
           </button>

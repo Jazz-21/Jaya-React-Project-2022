@@ -36,9 +36,16 @@ const HamsterCard = ({ hamster }: Props) => {
 		<div className={styles.gallery}>
 			<div className={styles.gallerycard}>
 		  <img className={styles.allimages} src={picImport(hamster.imgName)} />
-		  		<p><b>{hamster.name}</b> loves to {hamster.loves}<br />
-				 and <br />{hamster.favFood} is his favourite food<br />
-				<button className={styles.delete} onClick={() => hamsterCard()}>Delete Hamster</button></p>
+
+		  		<h3>Name: {hamster.name}</h3> 
+				<p> Age: {hamster.age}<br />
+				Loves: {hamster.loves}<br />
+				Favorite Food: {hamster.favFood} <br />
+				Wins: {hamster.wins}<br />
+				Defeats: {hamster.defeats}<br />
+				Matches: {hamster.games}</p>
+
+				<button className={styles.delete} onClick={() => hamsterCard()}>Delete Hamster</button>
 			</div>
 		</div>
 	  );

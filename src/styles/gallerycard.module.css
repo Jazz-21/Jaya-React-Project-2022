@@ -1,7 +1,7 @@
 .gallery{
   display: inline-flex;
   flex-wrap: wrap;
-  width: 600px;
+  width: 500px;
   height: 450px;
   margin-top: 3em;
   justify-content: center;
@@ -9,8 +9,8 @@
 
 .gallery p{
   background-color: rgb(155, 241, 241); 
-  border-radius: 20px;
-  padding-top: 1em;
+  border-radius: 15px;
+  
 }
 
 .gallerycard{
@@ -19,7 +19,7 @@
 
 .delete{
   font-weight: bold; 
-  margin-top: 1em; 
+ 
   margin-bottom: 2em;
 }
 .delete:hover{
